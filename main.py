@@ -48,3 +48,9 @@ class HOTEL_MANAGEMENT:
             "-slant roman -underline 0 -overstrike 0"
         font9 = "-family {Segoe UI} -size 9 -weight normal -slant "  \
             "roman -underline 0 -overstrike 0"
+
+        root.geometry("963x749+540+110")
+        root.title("HOTEL MANAGEMENT")
+        root.configure(background="#d9d9d9")
+        root.configure(highlightbackground="#d9d9d9")
+        root.configure(highlightcolor="black")
