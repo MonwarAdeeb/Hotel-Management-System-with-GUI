@@ -54,3 +54,16 @@ class HOTEL_MANAGEMENT:
         root.configure(background="#d9d9d9")
         root.configure(highlightbackground="#d9d9d9")
         root.configure(highlightcolor="black")
+
+        self.menubar = Menu(root, font=font9, bg=_bgcolor, fg=_fgcolor)
+        root.configure(menu=self.menubar)
+
+        self.Frame1 = Frame(root)
+        self.Frame1.place(relx=0.02, rely=0.03, relheight=0.94, relwidth=0.96)
+        self.Frame1.configure(relief=GROOVE)
+        self.Frame1.configure(borderwidth="2")
+        self.Frame1.configure(relief=GROOVE)
+        self.Frame1.configure(background="#d9d9d9")
+        self.Frame1.configure(highlightbackground="#d9d9d9")
+        self.Frame1.configure(highlightcolor="black")
+        self.Frame1.configure(width=925)
