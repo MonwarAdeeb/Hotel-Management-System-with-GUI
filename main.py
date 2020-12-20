@@ -67,3 +67,14 @@ class HOTEL_MANAGEMENT:
         self.Frame1.configure(highlightbackground="#d9d9d9")
         self.Frame1.configure(highlightcolor="black")
         self.Frame1.configure(width=925)
+
+        self.Message6 = Message(self.Frame1)
+        self.Message6.place(relx=0.09, rely=0.01,
+                            relheight=0.15, relwidth=0.86)
+        self.Message6.configure(background="#d9d9d9")
+        self.Message6.configure(font=font16)
+        self.Message6.configure(foreground="#000000")
+        self.Message6.configure(highlightbackground="#d9d9d9")
+        self.Message6.configure(highlightcolor="black")
+        self.Message6.configure(text='''WELCOME''')
+        self.Message6.configure(width=791)
