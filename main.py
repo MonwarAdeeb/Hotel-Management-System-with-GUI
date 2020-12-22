@@ -154,3 +154,7 @@ class HOTEL_MANAGEMENT:
         self.Button6.configure(width=566)
         self.Button6.configure(command=quit)
         root.mainloop()
+
+
+if __name__ == '__main__':
+    GUUEST = HOTEL_MANAGEMENT()
