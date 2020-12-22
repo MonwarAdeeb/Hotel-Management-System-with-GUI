@@ -90,7 +90,7 @@ class HOTEL_MANAGEMENT:
         self.Button2.configure(highlightbackground="#d9d9d9")
         self.Button2.configure(highlightcolor="black")
         self.Button2.configure(pady="0")
-        self.Button2.configure(text='''1.CHECK INN''')
+        self.Button2.configure(text='''1.Check In''')
         self.Button2.configure(width=566)
         self.Button2.configure(command=click_checkinn)
 
@@ -105,7 +105,7 @@ class HOTEL_MANAGEMENT:
         self.Button3.configure(highlightbackground="#d9d9d9")
         self.Button3.configure(highlightcolor="black")
         self.Button3.configure(pady="0")
-        self.Button3.configure(text='''2.SHOW GUEST LIST''')
+        self.Button3.configure(text='''2.See Guest List''')
         self.Button3.configure(width=566)
         self.Button3.configure(command=click_list)
 
@@ -120,7 +120,7 @@ class HOTEL_MANAGEMENT:
         self.Button4.configure(highlightbackground="#d9d9d9")
         self.Button4.configure(highlightcolor="black")
         self.Button4.configure(pady="0")
-        self.Button4.configure(text='''3.CHECK OUT''')
+        self.Button4.configure(text='''3.Check Out''')
         self.Button4.configure(width=566)
         self.Button4.configure(command=click_checkout)
 
@@ -135,7 +135,7 @@ class HOTEL_MANAGEMENT:
         self.Button5.configure(highlightbackground="#d9d9d9")
         self.Button5.configure(highlightcolor="black")
         self.Button5.configure(pady="0")
-        self.Button5.configure(text='''4.GET INFO OF ANY GUEST''')
+        self.Button5.configure(text='''4.Guest Info''')
         self.Button5.configure(width=566)
         self.Button5.configure(command=click_getinfo)
 
@@ -150,7 +150,7 @@ class HOTEL_MANAGEMENT:
         self.Button6.configure(highlightbackground="#d9d9d9")
         self.Button6.configure(highlightcolor="black")
         self.Button6.configure(pady="0")
-        self.Button6.configure(text='''5.EXIT''')
+        self.Button6.configure(text='''5.Exit''')
         self.Button6.configure(width=566)
         self.Button6.configure(command=quit)
         root.mainloop()
