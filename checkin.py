@@ -68,3 +68,30 @@ class save:
         self.mobile_no = MOBILE_NO_PRO
         self.room_no = ROOM_NO_PRO
         self.price = PRICE_PRO
+
+
+class HOTEL_MANGMENT_checkin:
+
+    def __init__(self):
+        self.NAME = ""
+        self.ADDERESS = ""
+        self.MOBILE = ""
+        self.DAYS = 0
+        self.price = 0
+        self.room = 0
+
+        def chk_name():
+            while True:
+
+                self.k = str(self.name.get())
+
+                a = self.k.isdigit()
+                if len(self.k) != 0 and a != True:
+                    self.NAME = self.k
+                    self.Text1.insert(INSERT, "Name Entered""\n")
+                    break
+                else:
+                    self.Text1.insert(
+                        INSERT, "Invalid input. Please Enter a Valid Name""\n")
+
+                    break
