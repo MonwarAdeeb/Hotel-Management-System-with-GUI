@@ -95,3 +95,18 @@ class HOTEL_MANGMENT_checkin:
                         INSERT, "Invalid input. Please Enter a Valid Name""\n")
 
                     break
+
+        def chk_add():
+            while True:
+                self.g = str(self.addr.get())
+
+                ak = self.g.isdigit()
+                if len(self.g) != 0 and ak != True:
+                    self.ADDERESS = self.g
+                    self.Text1.insert(INSERT, "Address Entered""\n")
+                    break
+                else:
+                    self.Text1.insert(
+                        INSERT, "Invalid input. Please Enter a Valid Address""\n")
+
+                    break
