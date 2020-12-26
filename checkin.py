@@ -137,3 +137,9 @@ class HOTEL_MANGMENT_checkin:
                 else:
                     self.Text1.insert(INSERT, "invalid Input ""\n")
                     break
+
+        def enter(self):
+            self.name = self.NAME
+            self.address = self.ADDERESS
+            self.mobile_no = self.MOBILE
+            self.no_of_days = int(self.DAYS)
