@@ -110,3 +110,17 @@ class HOTEL_MANGMENT_checkin:
                         INSERT, "Invalid input. Please Enter a Valid Address""\n")
 
                     break
+
+        def chk_mo():
+            while True:
+
+                self.h = str(self.mobile.get())
+                if self.h.isdigit() == True and len(self.h) != 0 and len(self.h) == 10:
+                    self.MOBILE = self.h
+                    self.Text1.insert(
+                        INSERT, "Phone Number  Entered""\n")
+                    break
+                else:
+                    self.Text1.insert(
+                        INSERT, "Invalid input. Please Enter a Valid Phone Number""\n")
+                break
