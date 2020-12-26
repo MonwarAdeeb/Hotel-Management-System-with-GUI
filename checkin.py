@@ -124,3 +124,16 @@ class HOTEL_MANGMENT_checkin:
                     self.Text1.insert(
                         INSERT, "Invalid input. Please Enter a Valid Phone Number""\n")
                 break
+
+        def chk_day():
+            while True:
+
+                self.l = str(self.days.get())
+
+                if self.l.isdigit() == True and len(self.l) != 0:
+                    self.DAYS = int(self.l)
+                    self.Text1.insert(INSERT, "Days Entered""\n")
+                    break
+                else:
+                    self.Text1.insert(INSERT, "invalid Input ""\n")
+                    break
