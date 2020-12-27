@@ -158,3 +158,11 @@ class HOTEL_MANGMENT_checkin:
             elif self.ch == 4:
                 self.price = self.price + (1700 * self.no_of_days)
                 m[0] = 4
+
+        def payment_option(self):
+            op = self.p
+            if op == 1:
+                self.Text1.insert(INSERT, "no discount""\n")
+            elif op == 2:
+                self.price = self.price - ((self.price * 10) / 100)
+                self.Text1.insert(INSERT, "10% discount""\n")
