@@ -143,3 +143,18 @@ class HOTEL_MANGMENT_checkin:
             self.address = self.ADDERESS
             self.mobile_no = self.MOBILE
             self.no_of_days = int(self.DAYS)
+
+        def tor(self):
+
+            if self.ch == 1:
+                self.price = self.price + (2000 * self.no_of_days)
+                m[0] = 1
+            elif self.ch == 2:
+                self.price = self.price + (1500 * self.no_of_days)
+                m[0] = 2
+            elif self.ch == 3:
+                self.price = self.price + (1000 * self.no_of_days)
+                m[0] = 3
+            elif self.ch == 4:
+                self.price = self.price + (1700 * self.no_of_days)
+                m[0] = 4
