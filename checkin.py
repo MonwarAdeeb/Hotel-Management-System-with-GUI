@@ -166,3 +166,44 @@ class HOTEL_MANGMENT_checkin:
             elif op == 2:
                 self.price = self.price - ((self.price * 10) / 100)
                 self.Text1.insert(INSERT, "10% discount""\n")
+
+        def bill(self):
+
+            if m[0] == 1:
+                a = Delux
+            elif m[0] == 2:
+                a = Semi_Delux
+            elif m[0] == 3:
+                a = General
+            elif m[0] == 4:
+                a = Joint_Room
+
+            G = []
+            f2 = open("hotel.dat", "rb")
+            try:
+                while True:
+                    s = pickle.load(f2)
+
+                    k = s.room_no
+                    G.append(k)
+                    continue
+
+            except EOFError:
+                pass
+
+            for r in a:
+                if r not in G:
+                    self.room = r
+                    break
+                else:
+                    continue
+            self.room = r
+            f2.close()
+
+            details_list.append(self.name)
+            details_list.append(self.address)
+            details_list.append(self.mobile_no)
+            details_list.append(self.room)
+            details_list.append(self.price)
+
+            file_save()
