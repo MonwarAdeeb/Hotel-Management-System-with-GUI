@@ -279,3 +279,79 @@ class HOTEL_MANGMENT_checkin:
             else:
                 self.Text1.insert(
                     INSERT, "invalid choice please input a valid choice""\n")
+
+        root = Tk()
+
+        '''This class configures and populates the toplevel window.
+           top is the toplevel containing window.'''
+        _bgcolor = '#ffffff'  # X11 color: 'white'
+        _fgcolor = '#000000'  # X11 color: 'black'
+        _compcolor = '#ffffff'  # X11 color: 'white'
+        _ana1color = '#ffffff'  # X11 color: 'white'
+        _ana2color = '#ffffff'  # X11 color: 'white'
+        font10 = "-family {Courier New} -size 10 -weight normal -slant"  \
+            " roman -underline 0 -overstrike 0"
+        font11 = "-family {Segoe UI} -size 30 -weight bold -slant "  \
+            "roman -underline 0 -overstrike 0"
+        font12 = "-family {Segoe UI} -size 18 -weight bold -slant "  \
+            "roman -underline 0 -overstrike 0"
+        font13 = "-family {Segoe UI} -size 17 -weight bold -slant "  \
+            "roman -underline 0 -overstrike 0"
+        font14 = "-family {Segoe UI} -size 16 -weight bold -slant "  \
+            "roman -underline 0 -overstrike 0"
+        font15 = "-family {Segoe UI} -size 19 -weight bold -slant "  \
+            "roman -underline 0 -overstrike 0"
+        font16 = "-family {Segoe UI} -size 15 -weight bold -slant "  \
+            "roman -underline 0 -overstrike 0"
+        font9 = "-family {Segoe UI} -size 9 -weight normal -slant "  \
+            "roman -underline 0 -overstrike 0"
+
+        root.geometry("1069x742")
+        root.title("HOTEL MANGMENT")
+        root.configure(background="#ffffff")
+        root.configure(highlightbackground="#ffffff")
+        root.configure(highlightcolor="black")
+
+        self.Text1 = Text(root)
+        self.Text1.place(relx=0.03, rely=0.65, relheight=0.29, relwidth=0.93)
+        self.Text1.configure(background="white")
+        self.Text1.configure(font=font9)
+        self.Text1.configure(foreground="black")
+        self.Text1.configure(highlightbackground="#ffffff")
+        self.Text1.configure(highlightcolor="black")
+        self.Text1.configure(insertbackground="black")
+        self.Text1.configure(selectbackground="#e6e6e6")
+        self.Text1.configure(selectforeground="black")
+        self.Text1.configure(width=994)
+        self.Text1.configure(wrap=WORD)
+
+        self.Frame1 = Frame(root)
+        self.Frame1.place(relx=0.03, rely=0.05, relheight=0.12, relwidth=0.93)
+        self.Frame1.configure(relief=GROOVE)
+        self.Frame1.configure(borderwidth="2")
+        self.Frame1.configure(relief=GROOVE)
+        self.Frame1.configure(background="#ffffff")
+        self.Frame1.configure(highlightbackground="#ffffff")
+        self.Frame1.configure(highlightcolor="black")
+        self.Frame1.configure(width=995)
+
+        self.Message1 = Message(self.Frame1)
+        self.Message1.place(relx=0.04, rely=0.11, relheight=0.84, relwidth=0.5)
+        self.Message1.configure(background="#ffffff")
+        self.Message1.configure(font=font11)
+        self.Message1.configure(foreground="#000000")
+        self.Message1.configure(highlightbackground="#ffffff")
+        self.Message1.configure(highlightcolor="black")
+        self.Message1.configure(text='''YOU CLICKED ON''')
+        self.Message1.configure(width=496)
+
+        self.Message2 = Message(self.Frame1)
+        self.Message2.place(relx=0.52, rely=0.19,
+                            relheight=0.74, relwidth=0.07)
+        self.Message2.configure(background="#ffffff")
+        self.Message2.configure(font=font11)
+        self.Message2.configure(foreground="#000000")
+        self.Message2.configure(highlightbackground="#ffffff")
+        self.Message2.configure(highlightcolor="black")
+        self.Message2.configure(text=''':''')
+        self.Message2.configure(width=66)
