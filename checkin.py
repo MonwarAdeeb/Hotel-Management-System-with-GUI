@@ -207,3 +207,75 @@ class HOTEL_MANGMENT_checkin:
             details_list.append(self.price)
 
             file_save()
+
+            def submit_clicked():
+            if self.var1.get() == 1 and self.var2.get() == 0 and self.var3.get() == 0 and self.var4.get() == 0 and self.var5.get() == 1 and self.var6.get() == 0:
+                self.ch = 1
+                self.p = 2
+
+                enter(self)
+                tor(self)
+                payment_option(self)
+                bill(self)
+
+            elif self.var1.get() == 1 and self.var2.get() == 0 and self.var3.get() == 0 and self.var4.get() == 0 and self.var5.get() == 0 and self.var6.get() == 1:
+                self.ch = 1
+                self.p = 1
+
+                enter(self)
+                tor(self)
+                payment_option(self)
+                bill(self)
+            elif self.var1.get() == 0 and self.var2.get() == 1 and self.var3.get() == 0 and self.var4.get() == 0 and self.var5.get() == 0 and self.var6.get() == 1:
+                self.ch = 2
+                self.p = 1
+
+                enter(self)
+                tor(self)
+                payment_option(self)
+                bill(self)
+            elif self.var1.get() == 0 and self.var2.get() == 1 and self.var3.get() == 0 and self.var4.get() == 0 and self.var5.get() == 1 and self.var6.get() == 0:
+                self.ch = 2
+                self.p = 2
+
+                enter(self)
+                tor(self)
+                payment_option(self)
+                bill(self)
+            elif self.var1.get() == 0 and self.var2.get() == 0 and self.var3.get() == 1 and self.var4.get() == 0 and self.var5.get() == 0 and self.var6.get() == 1:
+                self.ch = 3
+                self.p = 1
+
+                enter(self)
+                tor(self)
+                payment_option(self)
+                bill(self)
+            elif self.var1.get() == 0 and self.var2.get() == 0 and self.var3.get() == 1 and self.var4.get() == 0 and self.var5.get() == 1 and self.var6.get() == 0:
+                self.ch = 3
+                self.p = 2
+
+                enter(self)
+                tor(self)
+                payment_option(self)
+                bill(self)
+
+            elif self.var1.get() == 0 and self.var2.get() == 0 and self.var3.get() == 0 and self.var4.get() == 1 and self.var5.get() == 0 and self.var6.get() == 1:
+                self.ch = 4
+                self.p = 1
+
+                enter(self)
+                tor(self)
+                payment_option(self)
+                bill(self)
+            elif self.var1.get() == 0 and self.var2.get() == 0 and self.var3.get() == 0 and self.var4.get() == 1 and self.var5.get() == 1 and self.var6.get() == 0:
+                self.ch = 4
+                self.p = 2
+
+                enter(self)
+                tor(self)
+                payment_option(self)
+                bill(self)
+
+            else:
+                self.Text1.insert(
+                    INSERT, "invalid choice please input a valid choice""\n")
