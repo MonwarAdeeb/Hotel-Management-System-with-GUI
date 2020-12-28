@@ -355,3 +355,14 @@ class HOTEL_MANGMENT_checkin:
         self.Message2.configure(highlightcolor="black")
         self.Message2.configure(text=''':''')
         self.Message2.configure(width=66)
+
+        self.Message3 = Message(self.Frame1)
+        self.Message3.place(relx=0.57, rely=0.11,
+                            relheight=0.79, relwidth=0.35)
+        self.Message3.configure(background="#ffffff")
+        self.Message3.configure(font=font11)
+        self.Message3.configure(foreground="#000000")
+        self.Message3.configure(highlightbackground="#ffffff")
+        self.Message3.configure(highlightcolor="black")
+        self.Message3.configure(text='''CHECK INN''')
+        self.Message3.configure(width=347)
