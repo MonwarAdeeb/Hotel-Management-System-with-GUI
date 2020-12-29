@@ -366,3 +366,16 @@ class HOTEL_MANGMENT_checkin:
         self.Message3.configure(highlightcolor="black")
         self.Message3.configure(text='''CHECK INN''')
         self.Message3.configure(width=347)
+
+        self.menubar = Menu(root, font=font9, bg=_bgcolor, fg=_fgcolor)
+        root.configure(menu=self.menubar)
+
+        self.Frame2 = Frame(root)
+        self.Frame2.place(relx=0.03, rely=0.18, relheight=0.46, relwidth=0.93)
+        self.Frame2.configure(relief=GROOVE)
+        self.Frame2.configure(borderwidth="2")
+        self.Frame2.configure(relief=GROOVE)
+        self.Frame2.configure(background="#ffffff")
+        self.Frame2.configure(highlightbackground="#ffffff")
+        self.Frame2.configure(highlightcolor="black")
+        self.Frame2.configure(width=995)
