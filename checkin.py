@@ -456,4 +456,16 @@ class HOTEL_MANGMENT_checkin:
         self.Label5.configure(foreground="#000000")
         self.Label5.configure(highlightbackground="#ffffff")
         self.Label5.configure(highlightcolor="black")
-        self.Label5.configure(text='''ENTER YOUR ADDRESS''')
+        self.Label5.configure(text='''ENTER YOUR ADDRESS'
+
+        self.Label6 = Label(self.Frame2)
+        self.Label6.place(relx=0.32, rely=0.5, height=48, width=296)
+        self.Label6.configure(activebackground="#ffffff")
+        self.Label6.configure(activeforeground="black")
+        self.Label6.configure(background="#ffffff")
+        self.Label6.configure(disabledforeground="#bfbfbf")
+        self.Label6.configure(font=font13)
+        self.Label6.configure(foreground="#000000")
+        self.Label6.configure(highlightbackground="#ffffff")
+        self.Label6.configure(highlightcolor="black")
+        self.Label6.configure(text='''CHOOSE YOUR ROOM''')
