@@ -481,6 +481,7 @@ class HOTEL_MANGMENT_checkin:
         self.Label7.configure(highlightbackground="#ffffff")
         self.Label7.configure(highlightcolor="black")
         self.Label7.configure(text='''CHOOSE PAYMENT METHOD''')
+
         self.Message4.place(relx=0.41, rely=0.04, relheight=0.1, relwidth=0.05)
         self.Message4.configure(background="#ffffff")
         self.Message4.configure(font=font13)
@@ -489,3 +490,14 @@ class HOTEL_MANGMENT_checkin:
         self.Message4.configure(highlightcolor="black")
         self.Message4.configure(text=''':''')
         self.Message4.configure(width=46)
+
+        self.Message5 = Message(self.Frame2)
+        self.Message5.place(relx=0.42, rely=0.17,
+                            relheight=0.12, relwidth=0.03)
+        self.Message5.configure(background="#ffffff")
+        self.Message5.configure(font=font13)
+        self.Message5.configure(foreground="#000000")
+        self.Message5.configure(highlightbackground="#ffffff")
+        self.Message5.configure(highlightcolor="black")
+        self.Message5.configure(text=''':''')
+        self.Message5.configure(width=26)
