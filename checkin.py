@@ -609,3 +609,14 @@ class HOTEL_MANGMENT_checkin:
         self.Checkbutton6.configure(justify=LEFT)
         self.Checkbutton6.configure(text='''By cash''')
         self.Checkbutton6.configure(variable=self.var6)
+
+        self.Message7 = Message(self.Frame2)
+        self.Message7.place(relx=0.28, rely=0.46,
+                            relheight=0.11, relwidth=0.04)
+        self.Message7.configure(background="#ffffff")
+        self.Message7.configure(font=font15)
+        self.Message7.configure(foreground="#000000")
+        self.Message7.configure(highlightbackground="#ffffff")
+        self.Message7.configure(highlightcolor="black")
+        self.Message7.configure(text='''-''')
+        self.Message7.configure(width=41)
