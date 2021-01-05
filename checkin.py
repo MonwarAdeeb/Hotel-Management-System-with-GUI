@@ -208,7 +208,7 @@ class HOTEL_MANGMENT_checkin:
 
             file_save()
 
-            def submit_clicked():
+        def submit_clicked():
             if self.var1.get() == 1 and self.var2.get() == 0 and self.var3.get() == 0 and self.var4.get() == 0 and self.var5.get() == 1 and self.var6.get() == 0:
                 self.ch = 1
                 self.p = 2
@@ -673,3 +673,11 @@ class HOTEL_MANGMENT_checkin:
         self.Button4.configure(pady="0")
         self.Button4.configure(text='''SUBMIT''')
         self.Button4.configure(command=submit_clicked)
+
+        self.Label1 = Label(self.Frame2)
+        self.Label1.place(relx=0.05, rely=0.43, height=44, width=260)
+        self.Label1.configure(background="#ffffff")
+        self.Label1.configure(disabledforeground="#bfbfbf")
+        self.Label1.configure(font=font13)
+        self.Label1.configure(foreground="#000000")
+        self.Label1.configure(text='''NUMBER OF DAYS''')
