@@ -703,3 +703,22 @@ class HOTEL_MANGMENT_checkin:
         self.Message8.configure(highlightcolor="black")
         self.Message8.configure(text=''':''')
         self.Message8.configure(width=26)
+
+        self.Button5 = Button(self.Frame2)
+        self.Button5.place(relx=0.91, rely=0.43, height=33, width=43)
+        self.Button5.configure(activebackground="#ffffff")
+        self.Button5.configure(activeforeground="#000000")
+        self.Button5.configure(background="#ffffff")
+        self.Button5.configure(disabledforeground="#bfbfbf")
+        self.Button5.configure(foreground="#000000")
+        self.Button5.configure(highlightbackground="#ffffff")
+        self.Button5.configure(highlightcolor="black")
+        self.Button5.configure(pady="0")
+        self.Button5.configure(text='''OK''')
+        self.Button5.configure(command=chk_day)
+
+        root.mainloop()
+
+
+if __name__ == '__main__':
+    hotel = HOTEL_MANGMENT_checkin()
