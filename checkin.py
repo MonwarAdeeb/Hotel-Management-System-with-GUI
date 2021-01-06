@@ -692,3 +692,14 @@ class HOTEL_MANGMENT_checkin:
         self.Entry1.configure(insertbackground="black")
         self.Entry1.configure(width=424)
         self.Entry1.configure(textvariable=self.days)
+
+        self.Message8 = Message(self.Frame2)
+        self.Message8.place(relx=0.42, rely=0.41,
+                            relheight=0.11, relwidth=0.03)
+        self.Message8.configure(background="#ffffff")
+        self.Message8.configure(font=font13)
+        self.Message8.configure(foreground="#000000")
+        self.Message8.configure(highlightbackground="#ffffff")
+        self.Message8.configure(highlightcolor="black")
+        self.Message8.configure(text=''':''')
+        self.Message8.configure(width=26)
