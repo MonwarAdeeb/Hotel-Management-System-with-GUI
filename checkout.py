@@ -49,3 +49,45 @@ try:
 except ImportError:
     import tkinter.ttk as ttk
     py3 = True
+
+
+class New_Toplevel:
+
+    def __init__(self):
+        def check_room():
+            self.rom = str(self.data.get())
+            print(self.rom)
+            print("\n")
+            if self.rom.isdigit() == True and len(self.rom) != 0:
+                self.Text1.insert(INSERT, " valid room number ""\n")
+                v = int(self.rom)
+                f = open("hotel.dat", "rb")
+                f1 = open("hote.dat", "ab")
+                n = 0
+                try:
+                    while True:
+                        s = pickle.load(f)
+                        if s.room_no == v:
+                            n = 1
+                            name1 = s.name
+
+                            print(" ")
+                        else:
+                            pickle.dump(s, f1)
+                except EOFError:
+                    if n == 0:
+                        self.Text1.insert(INSERT, "NO GUEST FOUND""\n")
+
+                    elif n == 1:
+
+                        self.Text1.insert(
+                            INSERT, "THANK YOU  " + name1.upper() + " FOR VISTING US""\n")
+                    pass
+                f.close()
+                f1.close()
+                os.remove("hotel.dat")
+                os.rename("hote.dat", "hotel.dat")
+
+            else:
+                self.Text1.insert(
+                    INSERT, "invalid input please input a valid ROOM NO.""\n")
