@@ -108,3 +108,9 @@ class New_Toplevel:
             "roman -underline 0 -overstrike 0"
         font9 = "-family {Segoe UI} -size 9 -weight normal -slant "  \
             "roman -underline 0 -overstrike 0"
+
+        root.geometry("1011x750")
+        root.title("HOTEL MANAGEMENT")
+        root.configure(background="#ffffff")
+        root.configure(highlightbackground="#ffffff")
+        root.configure(highlightcolor="black")
