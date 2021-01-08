@@ -91,3 +91,20 @@ class New_Toplevel:
             else:
                 self.Text1.insert(
                     INSERT, "invalid input please input a valid ROOM NO.""\n")
+
+        root = Tk()
+        '''This class configures and populates the toplevel window.
+           top is the toplevel containing window.'''
+        _bgcolor = '#ffffff'  # X11 color: 'white'
+        _fgcolor = '#000000'  # X11 color: 'black'
+        _compcolor = '#ffffff'  # X11 color: 'white'
+        _ana1color = '#ffffff'  # X11 color: 'white'
+        _ana2color = '#ffffff'  # X11 color: 'white'
+        font10 = "-family {Courier New} -size 10 -weight normal -slant"  \
+            " roman -underline 0 -overstrike 0"
+        font11 = "-family {Segoe UI} -size 23 -weight bold -slant "  \
+            "roman -underline 0 -overstrike 0"
+        font12 = "-family {Segoe UI} -size 24 -weight bold -slant "  \
+            "roman -underline 0 -overstrike 0"
+        font9 = "-family {Segoe UI} -size 9 -weight normal -slant "  \
+            "roman -underline 0 -overstrike 0"
