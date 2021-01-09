@@ -163,3 +163,22 @@ class New_Toplevel:
         self.Text1.configure(selectforeground="black")
         self.Text1.configure(width=824)
         self.Text1.configure(wrap=WORD)
+
+        self.Button1 = Button(self.Frame1)
+        self.Button1.place(relx=0.34, rely=0.28, height=93, width=286)
+        self.Button1.configure(activebackground="#ffffff")
+        self.Button1.configure(activeforeground="#000000")
+        self.Button1.configure(background="#ffffff")
+        self.Button1.configure(disabledforeground="#bfbfbf")
+        self.Button1.configure(font=font12)
+        self.Button1.configure(foreground="#000000")
+        self.Button1.configure(highlightbackground="#ffffff")
+        self.Button1.configure(highlightcolor="black")
+        self.Button1.configure(pady="0")
+        self.Button1.configure(text='''CHECK OUT''')
+        self.Button1.configure(command=check_room)
+        root.mainloop()
+
+
+if __name__ == '__main__':
+    out = New_Toplevel()
