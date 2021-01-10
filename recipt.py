@@ -18,3 +18,33 @@ try:
 except ImportError:
     import tkinter.ttk as ttk
     py3 = True
+
+fo1 = open("recipt.txt", "r")
+list1 = fo1.readlines()
+
+del list1[1]
+del list1[2]
+del list1[3]
+del list1[4]
+del list1[5]
+list1[0] = list1[0][:-1]
+list1[1] = list1[1][:-1]
+list1[2] = list1[2][:-1]
+list1[3] = list1[3][:-1]
+list1[4] = list1[4][:-1]
+
+p = '''
+@@@@@@@@@@@  PROJECTWORLDS HOTEL AND RESORTS  @@@@@@@@@@@@@
+@@@@@@@@@@@@ BHILAI CHHATTISGARH@@@@@@@@@@@@@@
+@@@@@@@@@@ SERVING    GUEST   SINCE @@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@    ###2000###       @@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+NAME-%s
+ADDRESS-%s
+MOBILE NO.-%s
+YOUR TOTAL BILL IS Rs.-%s
+YOUR ROOM NUMBER IS %s    
+     
+     
+     
+''' % (list1[0], list1[1], list1[2], list1[4], list1[3])
