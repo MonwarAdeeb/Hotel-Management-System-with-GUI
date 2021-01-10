@@ -64,3 +64,21 @@ class recipt:
         root.geometry("800x800")
         root.title("recipt")
         root.configure(background="#d9d9d9")
+
+        self.Label1 = Label(root)
+        self.Label1.configure(background="#d9d9d9")
+        self.Label1.place(relx=0, rely=0, height=800, width=800)
+        self.Label1.configure(disabledforeground="#a3a3a3")
+        self.Label1.configure(foreground="#000000")
+        self.Label1.configure(text=p)
+        self.Label1.configure(anchor=N)
+
+        self.Label1.configure(wraplength=1000)
+        self.Label1.configure(justify=LEFT)
+
+        self.Label1.configure(width=582)
+        root.mainloop()
+
+
+if __name__ == '__main__':
+    recipt1 = recipt()
