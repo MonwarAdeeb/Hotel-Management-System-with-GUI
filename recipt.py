@@ -48,3 +48,19 @@ YOUR ROOM NUMBER IS %s
      
      
 ''' % (list1[0], list1[1], list1[2], list1[4], list1[3])
+
+
+class recipt:
+    def __init__(self):
+        root = Tk()
+        '''This class configures and populates the toplevel window.
+           top is the toplevel containing window.'''
+        _bgcolor = '#d9d9d9'  # X11 color: 'gray85'
+        _fgcolor = '#000000'  # X11 color: 'black'
+        _compcolor = '#d9d9d9'  # X11 color: 'gray85'
+        _ana1color = '#d9d9d9'  # X11 color: 'gray85'
+        _ana2color = '#d9d9d9'  # X11 color: 'gray85'
+
+        root.geometry("800x800")
+        root.title("recipt")
+        root.configure(background="#d9d9d9")
