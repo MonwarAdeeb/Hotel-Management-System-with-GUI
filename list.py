@@ -26,3 +26,13 @@ def restart_program():
     saving data) must be done before calling this function."""
     python = sys.executable
     os.execl(python, python, * sys.argv)
+
+
+class save:
+    def __init__(self, NAME_PRO, ADDRESS_PRO, MOBILE_NO_PRO, ROOM_NO_PRO, PRICE_PRO):
+        self.name = NAME_PRO
+        self.address = ADDRESS_PRO
+        self.mobile_no = MOBILE_NO_PRO
+        self.room_no = ROOM_NO_PRO
+        self.price = PRICE_PRO
+        print(self.name, self.address, self.mobile_no, self.room_no, self.price)
