@@ -2,6 +2,18 @@ import sys
 import os
 import pickle
 
+try:
+    from Tkinter import *
+except ImportError:
+    from tkinter import *
+
+try:
+    import ttk
+    py3 = False
+except ImportError:
+    import tkinter.ttk as ttk
+    py3 = True
+
 details_list = []
 l2 = []
 G = []
