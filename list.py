@@ -70,3 +70,15 @@ class HOTEL_MANGMENT_checkin:
         root.configure(background="#ffffff")
         root.configure(highlightbackground="#ffffff")
         root.configure(highlightcolor="black")
+
+        self.Labelframe1 = LabelFrame(root)
+        self.Labelframe1.place(relx=0.01, rely=0.04,
+                               relheight=0.95, relwidth=0.97)
+        self.Labelframe1.configure(relief=GROOVE)
+        self.Labelframe1.configure(font=font11)
+        self.Labelframe1.configure(foreground="black")
+        self.Labelframe1.configure(text='''LIST OF ALL GUEST''')
+        self.Labelframe1.configure(background="#ffffff")
+        self.Labelframe1.configure(highlightbackground="#ffffff")
+        self.Labelframe1.configure(highlightcolor="black")
+        self.Labelframe1.configure(width=760)
