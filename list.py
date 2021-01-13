@@ -64,3 +64,9 @@ class HOTEL_MANGMENT_checkin:
             "roman -underline 0 -overstrike 0"
         font14 = "-family {Times New Roman} -size 16 -weight bold " \
                  "-slant roman -underline 0 -overstrike 0"
+
+        root.geometry("780x541+504+123")
+        root.title("HOTEL MANAGEMENT")
+        root.configure(background="#ffffff")
+        root.configure(highlightbackground="#ffffff")
+        root.configure(highlightcolor="black")
