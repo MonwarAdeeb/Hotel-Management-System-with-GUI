@@ -82,3 +82,14 @@ class HOTEL_MANGMENT_checkin:
         self.Labelframe1.configure(highlightbackground="#ffffff")
         self.Labelframe1.configure(highlightcolor="black")
         self.Labelframe1.configure(width=760)
+
+        self.Frame1 = Frame(self.Labelframe1)
+        self.Frame1.place(relx=0.03, rely=0.1, relheight=0.86,
+                          relwidth=0.47, y=-31, h=15)
+        self.Frame1.configure(relief=GROOVE)
+        self.Frame1.configure(borderwidth="2")
+        self.Frame1.configure(relief=GROOVE)
+        self.Frame1.configure(background="#d9d9d9")
+        self.Frame1.configure(highlightbackground="#ffffff")
+        self.Frame1.configure(highlightcolor="black")
+        self.Frame1.configure(width=355)
