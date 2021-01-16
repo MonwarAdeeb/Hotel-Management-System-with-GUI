@@ -118,3 +118,14 @@ class HOTEL_MANGMENT_checkin:
         self.Text1.configure(selectforeground="black")
         self.Text1.configure(width=314)
         self.Text1.configure(wrap=WORD)
+
+        self.Frame2 = Frame(self.Labelframe1)
+        self.Frame2.place(relx=0.51, rely=0.1, relheight=0.86,
+                          relwidth=0.47, y=-31, h=15)
+        self.Frame2.configure(relief=GROOVE)
+        self.Frame2.configure(borderwidth="2")
+        self.Frame2.configure(relief=GROOVE)
+        self.Frame2.configure(background="#d9d9d9")
+        self.Frame2.configure(highlightbackground="#ffffff")
+        self.Frame2.configure(highlightcolor="black")
+        self.Frame2.configure(width=355)
