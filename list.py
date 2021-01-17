@@ -141,3 +141,23 @@ class HOTEL_MANGMENT_checkin:
         self.Label2.configure(highlightbackground="#ffffff")
         self.Label2.configure(highlightcolor="black")
         self.Label2.configure(text='''ROOM NO.''')
+
+        self.Text2 = Text(self.Frame2)
+        self.Text2.place(relx=0.06, rely=0.16, relheight=0.8, relwidth=0.88)
+        self.Text2.configure(background="white")
+        self.Text2.configure(font=font14)
+        self.Text2.configure(foreground="black")
+        self.Text2.configure(highlightbackground="#d9d9d9")
+        self.Text2.configure(highlightcolor="black")
+        self.Text2.configure(insertbackground="black")
+        self.Text2.configure(selectbackground="#c4c4c4")
+        self.Text2.configure(selectforeground="black")
+        self.Text2.configure(width=314)
+        self.Text2.configure(wrap=WORD)
+        for i in range(0, len(G)):
+            s = str(l2[i])
+            h = str(G[i])
+            self.Text1.insert(INSERT, s+"\n")
+            self.Text2.insert(INSERT, h+"\n")
+
+        root.mainloop()
