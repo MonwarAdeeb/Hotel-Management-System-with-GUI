@@ -161,3 +161,21 @@ class HOTEL_MANGMENT_checkin:
             self.Text2.insert(INSERT, h+"\n")
 
         root.mainloop()
+
+
+if __name__ == '__main__':
+    f2 = open("hotel.dat", "rb")
+    try:
+        while True:
+            s = pickle.load(f2)
+            k = s.room_no
+            o = s.name.upper()
+            l2.append(o)
+
+            G.append(k)
+            continue
+
+    except EOFError:
+        pass
+    f2.close()
+    hotel = HOTEL_MANGMENT_checkin()
