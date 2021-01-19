@@ -49,3 +49,15 @@ try:
 except ImportError:
     import tkinter.ttk as ttk
     py3 = True
+
+
+class HOTEL_MANAGEMENT:
+    def __init__(self):
+        def gotinfo():
+            self.gettininfo = str(self.gather.get())
+            print(self.gettininfo)
+            print("\n")
+            if self.gettininfo.isdigit() == True and len(self.gettininfo) != 0:
+                self.Text1.insert(INSERT, " valid room number ""\n")
+            else:
+                self.Text1.insert(INSERT, "invalid room number""\n")
