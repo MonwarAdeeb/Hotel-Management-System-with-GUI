@@ -36,3 +36,16 @@ class save:
         self.room_no = ROOM_NO_PRO
         self.price = PRICE_PRO
         print(self.name, self.address, self.mobile_no, self.room_no, self.price)
+
+
+try:
+    from Tkinter import *
+except ImportError:
+    from tkinter import *
+
+try:
+    import ttk
+    py3 = False
+except ImportError:
+    import tkinter.ttk as ttk
+    py3 = True
