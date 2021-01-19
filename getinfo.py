@@ -61,3 +61,29 @@ class HOTEL_MANAGEMENT:
                 self.Text1.insert(INSERT, " valid room number ""\n")
             else:
                 self.Text1.insert(INSERT, "invalid room number""\n")
+
+            try:
+                n = 0
+                f2 = open("hotel.dat", "rb")
+                while True:
+                    s = pickle.load(f2)
+                    a = str(s.room_no)
+                    print(a)
+                    if self.gettininfo == a:
+                        n = 1
+                        print("NAME-", "\t", "\t", s.name)
+                        print("\n")
+                        print("ADDRESS-", "\t", s.address)
+                        print("\n")
+                        print("MOBILE NO.-", "  ", s.mobile_no)
+                        print("\n")
+                        print("HIS TOTAL BILL IS Rs.", s.price)
+                    elif EOFError:
+                        if n == 0:
+                            print("NO GUEST IN ROOM ", self.gettininfo)
+                        else:
+                            n = 0
+                            continue
+            except EOFError:
+                pass
+                f2.close()
