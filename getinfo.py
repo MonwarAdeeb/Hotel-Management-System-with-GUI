@@ -87,3 +87,18 @@ class HOTEL_MANAGEMENT:
             except EOFError:
                 pass
                 f2.close()
+
+        root = Tk()
+        '''This class configures and populates the toplevel window.
+           top is the toplevel containing window.'''
+        _bgcolor = '#d9d9d9'  # X11 color: 'gray85'
+        _fgcolor = '#000000'  # X11 color: 'black'
+        _compcolor = '#d9d9d9'  # X11 color: 'gray85'
+        _ana1color = '#d9d9d9'  # X11 color: 'gray85'
+        _ana2color = '#d9d9d9'  # X11 color: 'gray85'
+        font10 = "-family {Segoe UI} -size 17 -weight bold -slant "  \
+            "roman -underline 0 -overstrike 0"
+        font11 = "-family {Segoe UI} -size 28 -weight bold -slant "  \
+            "roman -underline 0 -overstrike 0"
+        font9 = "-family {Segoe UI} -size 23 -weight bold -slant roman"  \
+            " -underline 0 -overstrike 0"
