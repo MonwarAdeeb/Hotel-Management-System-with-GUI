@@ -115,6 +115,7 @@ class HOTEL_MANAGEMENT:
         self.Frame1.configure(background="#d9d9d9")
         self.Frame1.configure(width=825)
 
+        self.Text1 = Text(self.Frame1)
         self.Text1.place(relx=0.04, rely=0.46, relheight=0.48, relwidth=0.93)
         self.Text1.configure(background="white")
         self.Text1.configure(font="TkTextFont")
