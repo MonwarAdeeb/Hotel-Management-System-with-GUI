@@ -127,3 +127,11 @@ class HOTEL_MANAGEMENT:
         self.Text1.configure(selectforeground="black")
         self.Text1.configure(width=764)
         self.Text1.configure(wrap=WORD)
+
+        self.Label1 = Label(self.Frame1)
+        self.Label1.place(relx=0.12, rely=0.15, height=48, width=377)
+        self.Label1.configure(background="#d9d9d9")
+        self.Label1.configure(disabledforeground="#a3a3a3")
+        self.Label1.configure(font=font9)
+        self.Label1.configure(foreground="#000000")
+        self.Label1.configure(text='''ENTER THE ROOM NO.   :''')
