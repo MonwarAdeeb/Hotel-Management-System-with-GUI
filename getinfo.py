@@ -161,3 +161,15 @@ class HOTEL_MANAGEMENT:
         self.Button1.configure(text='''SUBMIT''')
         self.Button1.configure(width=197)
         self.Button1.configure(command=gotinfo)
+
+        self.Message1 = Message(self.Frame1)
+        self.Message1.place(relx=0.22, rely=0.02,
+                            relheight=0.12, relwidth=0.56)
+        self.Message1.configure(background="#d9d9d9")
+        self.Message1.configure(font=font11)
+        self.Message1.configure(foreground="#000000")
+        self.Message1.configure(highlightbackground="#d9d9d9")
+        self.Message1.configure(highlightcolor="black")
+        self.Message1.configure(text='''GET INFO HERE ..!!''')
+        self.Message1.configure(width=460)
+        root.mainloop()
