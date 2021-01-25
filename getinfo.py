@@ -173,3 +173,7 @@ class HOTEL_MANAGEMENT:
         self.Message1.configure(text='''GET INFO HERE ..!!''')
         self.Message1.configure(width=460)
         root.mainloop()
+
+
+if __name__ == '__main__':
+    GETINFO = HOTEL_MANAGEMENT()
